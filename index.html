@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Fausto Garcia Jacinto">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <style>
+    #ML {
+      border-radius: 100%;
+    }
+    @keyframes neon {
+      from {
+        /* filter: drop-shadow(0 0 0 #ff3366); */
+        /* filter: drop-shadow(0 0 0 #63e657); */
+        filter: drop-shadow(0 0 12PX #66a9c4af);
+      }
+      to {
+        filter: drop-shadow(0 0 12px #ffbe0b);
+      }
+    }
+    @keyframes neon2 {
+      from {
+        filter: drop-shadow(0 0 1PX #ffbe0b);
+
+      }
+      to {
+        filter: drop-shadow(0 0 1px #66a9c4af);
+      }
+    }
+    h1 {
+      animation: neon 1s alternate infinite ease-in-out;
+      font-family: fantasy;
+      color: white;
+      border: 1px solid;
+      border-radius: 100%;
+    }
+    #linha{
+      border: 1px solid;
+      animation: neon2 1s alternate infinite ease-in-out;
+    }
+    body{
+      padding: 1px;
+      background: black;
+    }
+  </style>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <title>LABORCALL</title>
+</head>
+
+<body>
+
+  <div id="linha">
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <a
+            href="https://produto.mercadolivre.com.br/MLB-1488703062-minicmara-climatica-para-calibraco-de-termohigrometros-_JM#position=1&type=item&tracking_id=d2fb33e7-3ea9-43fc-866f-14656fd8716a">
+            <img src="https://img.ibxk.com.br/2018/03/06/06090301144004.jpg?w=1200&h=675&mode=crop&scale=both" alt=""
+              width="20%" height="20%" id="ML">
+          </a>
+          <span class="text-muted"><br>Qualidade não tem preço,<br> mas não tem que custar caro</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button id="btnMenu" class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1>LABORCALL</h1>
+      </nav>
+    </div>
+  </div>
+</body>
+
+
+</html>
