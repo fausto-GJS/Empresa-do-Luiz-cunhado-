@@ -19,25 +19,31 @@
 
   <style>
     #ML {
-      border-radius: 100%;
+      width: 30%;
+      height: 30%;
+      margin-left: 10px;
+      padding: 0px;
+    }
+    #ML2 {
+      width: 20%;
+      height: 20%;
+      margin-left: 15px;
+      padding: 0px;
     }
     @keyframes neon {
       from {
-        /* filter: drop-shadow(0 0 0 #ff3366); */
-        /* filter: drop-shadow(0 0 0 #63e657); */
-        filter: drop-shadow(0 0 12PX #66a9c4af);
+        filter: drop-shadow(0 0 5PX #66a9c4af);
       }
       to {
-        filter: drop-shadow(0 0 12px #ffbe0b);
+        filter: drop-shadow(0 0 3px #ffbe0b);
       }
     }
     @keyframes neon2 {
       from {
-        filter: drop-shadow(0 0 1PX #ffbe0b);
-
+        filter: drop-shadow(0 0 5PX #ffbe0b);
       }
       to {
-        filter: drop-shadow(0 0 1px #66a9c4af);
+        filter: drop-shadow(0 0 5px #66a9c4af);
       }
     }
     h1 {
@@ -47,45 +53,135 @@
       color: white;
       border: 1px solid;
       border-radius: 100%;
+      margin: 0px;
+      padding: 0px;
     }
-    #linha{
-      border: 1px solid;
+    #linha {
+      border: 0, 1px solid;
       animation: neon2 1s alternate infinite ease-in-out;
+      margin: 0px;
+      padding: 0px;
     }
-    body{
+    body {
       padding: 1px;
+      margin: 0px;
       background: black;
     }
+    #btnVendas,
+    #btnContato,
+    #btnSobre {
+      margin-left: 1px;
+      margin-right: 1px;
+      font-weight: bold;
+    }
+    #btnMenu {
+      margin-left: 22%;
+      padding: 0px;
+    }
+    #exampleModalScrollableSobre,
+    #exampleModalScrollableContato,
+    #exampleModalScrollableVenda {
+      background: black;
+    }
+    h3 {
+      text-align: center;
+    }
   </style>
-  <!-- <link rel="stylesheet" href="style.css"> -->
   <title>LABORCALL</title>
 </head>
 
 <body>
-
-  <div id="linha">
-    <div class="pos-f-t">
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <a
-            href="https://produto.mercadolivre.com.br/MLB-1488703062-minicmara-climatica-para-calibraco-de-termohigrometros-_JM#position=1&type=item&tracking_id=d2fb33e7-3ea9-43fc-866f-14656fd8716a">
-            <img src="https://img.ibxk.com.br/2018/03/06/06090301144004.jpg?w=1200&h=675&mode=crop&scale=both" alt=""
-              width="20%" height="20%" id="ML">
-          </a>
-          <span class="text-muted"><br>Qualidade não tem preço,<br> mas não tem que custar caro</span>
-        </div>
-      </div>
+  <div>
+    <div id="linha">
       <nav class="navbar navbar-dark bg-dark">
-        <button id="btnMenu" class="navbar-toggler" type="button" data-toggle="collapse"
-          data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <h1>LABORCALL</h1>
+        <a class="navbar-brand" href="index.html">
+          <h1>LABORCALL</h1>
+        </a>
+        <div id="btnMenu">
+          <button id="btnVendas" type="button" class="btn btn-outline-warning" data-toggle="modal"
+            data-target="#exampleModalScrollableVenda">
+            Vendas
+          </button>
+          <button id="btnContato" type="button" class="btn btn-outline-warning" data-toggle="modal"
+            data-target="#exampleModalScrollableContato">
+            Contato
+          </button>
+          <button id="btnSobre" type="button" class="btn btn-outline-warning" data-toggle="modal"
+            data-target="#exampleModalScrollableSobre">
+            Sobre
+          </button>
+        </div>
       </nav>
     </div>
-  </div>
+    </div>
+    <div class="modal fade" id="exampleModalScrollableContato" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalScrollableTitle">Contato</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Telefone: +55 (19) 98188 4784<br>laborcalmetrologia@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalScrollableVenda" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalScrollableTitle">Vendas</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <a
+                href="https://produto.mercadolivre.com.br/MLB-1488703062-minicmara-climatica-para-calibraco-de-termohigrometros-_JM#position=1&type=item&tracking_id=d2fb33e7-3ea9-43fc-866f-14656fd8716a">
+                <img id="ML" src="https://img.estadao.com.br/resources/jpg/4/6/1462600914764.jpg" alt="">
+              </a>
+              <a href="">
+                <img id="ML"
+                  src="https://s2.glbimg.com/npgc5_WL9zyrdha1YE9AeQxqVKU=/0x0:695x418/984x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2016/02/10/olx.jpg"
+                  alt="">
+              </a>
+              <a href="">
+                <img id="ML2" src="https://i.pinimg.com/originals/d6/09/0d/d6090d4014c218ed2e44016fbef2adfc.jpg" alt="">
+              </a>
+            </p>
+            <h3>Escolha uma das opções</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalScrollableSobre" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalScrollableTitle">Sobre</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              bla bla bla bla bla
+            </p>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
 </body>
-
-
 </html>
