@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Fausto Garcia Jacinto">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <style>
+    #card {
+      border: 0px;
+      margin-top: 115px;
+      position: absolute;
+    }
+
+    #cardTec {
+      position: fixed;
+    }
+
+    #img2 {
+      height: 234px;
+    }
+
+    #ML {
+      width: 30%;
+      height: 30%;
+      margin-left: 10px;
+      padding: 0px;
+    }
+
+    #ML2 {
+      width: 20%;
+      height: 20%;
+      margin-left: 15px;
+      padding: 0px;
+    }
+
+    @keyframes neon {
+      from {
+        filter: drop-shadow(0 0 5PX #66a9c4af);
+      }
+
+      to {
+        filter: drop-shadow(0 0 15px #ffbe0b);
+      }
+    }
+
+    @keyframes neon2 {
+      from {
+        filter: drop-shadow(0 0 10PX black);
+      }
+
+      to {
+        filter: drop-shadow(0 0 15px #ffbe0b);
+      }
+    }
+
+    h1 {
+      animation: neon 1s alternate infinite ease-in-out;
+      font-family: fantasy;
+      font-size: 38pt;
+      color: white;
+      border: 1px solid;
+      border-radius: 100%;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #logotipo {
+      animation: neon2 1s alternate infinite ease-in-out;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      background: black;
+    }
+
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    #btnVendas,
+    #btnContato,
+    #btnSobre {
+      margin-left: 1px;
+      margin-right: 1px;
+      font-weight: bold;
+    }
+
+    #btnMenu {
+      padding: 0px;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      background: black;
+      margin-top: 75px;
+    }
+
+    #exampleModalScrollableSobre,
+    #exampleModalScrollableContato,
+    #exampleModalScrollableVenda {
+      background: black;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    #fichaTecnica {
+      border: 0px;
+      margin-top: 120px;
+      position: absolute;
+      margin-left: 400px;
+      padding: 0px;
+      font-size: small;
+    }
+  </style>
+  <title>LABORCALL</title>
+</head>
+
+<body>
+  <div>
+    <div id="head" style="width: 10rem;">
+      <div id="logotipo">
+        <a class="navbar-brand" href="index.html">
+          <h1>LABORCALL</h1>
+        </a>
+      </div>
+      <div id="btnMenu">
+        <button id="btnVendas" type="button" class="btn btn-outline-warning" data-toggle="modal"
+          data-target="#exampleModalScrollableVenda">
+          Vendas
+        </button>
+        <button id="btnContato" type="button" class="btn btn-outline-warning" data-toggle="modal"
+          data-target="#exampleModalScrollableContato">
+          Contato
+        </button>
+        <button id="btnSobre" type="button" class="btn btn-outline-warning" data-toggle="modal"
+          data-target="#exampleModalScrollableSobre">
+          Sobre
+        </button>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalScrollableContato" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalScrollableTitle">LABORCALL® INTRUMENTAÇÃO E CONTROLE</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <strong>
+                Celular: +55 (11) 99384-0927<br>
+                Celular: +55 (19) 98188-4784<br>
+                vendas@laborcall.com.br
+              </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalScrollableVenda" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalScrollableTitle">Vendas</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <a
+                href="https://produto.mercadolivre.com.br/MLB-1488703062-minicmara-climatica-para-calibraco-de-termohigrometros-_JM#position=1&type=item&tracking_id=d2fb33e7-3ea9-43fc-866f-14656fd8716a">
+                <img id="ML" src="https://img.estadao.com.br/resources/jpg/4/6/1462600914764.jpg" alt="">
+              </a>
+              <a href="" onclick="alert('Vendas pelo OLX não disponivel no momento')">
+                <img id="ML"
+                  src="https://s2.glbimg.com/npgc5_WL9zyrdha1YE9AeQxqVKU=/0x0:695x418/984x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2016/02/10/olx.jpg"
+                  alt="">
+              </a>
+              <a href="" onclick="alert('Vendas pelo Whatsapp não disponivel no momento')">
+                <img id="ML2" src="https://i.pinimg.com/originals/d6/09/0d/d6090d4014c218ed2e44016fbef2adfc.jpg" alt="">
+              </a>
+            </p>
+            <h3>Escolha uma das opções</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalScrollableSobre" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="exampleModalScrollableTitle">Sobre</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4>História</h4>
+            <p>
+              A Laborcall foi criada em 2017 com o objetivo de trazer ao mercado
+              uma combinação de eficiência e praticidade na execução de serviços de
+              calibração de equipamentos ensaios e validação térmica, oferecendo
+              através de seus equipamentos a confiabilidada e precisão.
+            </p>
+            <h4>Politica da Qualidade</h4>
+            <p>
+              A Laborcall busca impreterivelmente oferecer o melhor resultado a seus clientes,
+              focando sempre nas atuais necessidades vigentes. Nos comprometemos a sempre
+              oferecer a melhor solução a nossos clientes e colaboradores, proporcionando
+              plena satisfação nos resultados. Buscamos excelência em nossa atuação no mercado,
+              a fim de manter o respeito e o apoio de clientes e colaboradores em nossas jornada
+              em busca do crescimento sustentável.
+            </p>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="fichaTecnica">
+    <h3>FAIXA DE UTILIZAÇÃO 10 À 60°C / 20 À 90%UR</h3>
+    <ul>
+      <li>Câmara interna com capacidade útil de 26 litros, confeccionada em chapa de aço inox 430.</li>
+      <li>Estrutura externa confeccionada em chapa de aço inox 430 escovado.</li>
+      <li>Sistema inteligente de desligamento da circulação de ar ao abrir a porta e iluminação interna por Leds de alto<br>
+        brilho, para facilitar a visualização de instrumentos com indicação acoplada.</li>
+      <li> Controle de temperatura através de um controlador e indicador digital microprocessado de quatro dígitos com<br>
+        sistema PID , sensibilidade de ± 0,1°C, relê de estado sólido e sensor de temperatura tipo Pt100.</li>
+      <li>Controle de umidade através de um controlador e indicador digital microprocessado de quatro dígitos, sistema<br>
+        PID, sensibilidade de ± 0,1% UR, relê de estado sólido e sonda capacitiva com compensação de temperatura.</li>
+      <li>Sistema de geração de umidade é através de reservatório de água à baixa temperatura, propiciando uma<br>
+        significante economia de água e energia, e tornando o controle de umidade mais estável e preciso.</li>
+      <li>Porta frontal com visor de vidro duplo, para facilitar a visualização dos instrumentos a sua leitura de<br>
+        calibração.</li>
+      <li>Sistema de refrigeração hermética de 1/6HP, através de fluido ecológico.</li>
+      <li>Sistema de nivelamento através de pés reguladores.</li>
+      <li>Acompanha: Manual de instruções; cabo de alimentação e 02 bandejas confeccionadas em arame de aço inox 304.
+      </li>
+      <li>Faixa de Operação - Temperatura: 10 à 60°C</li>
+      <li>Faixa de Operação - Umidade: 20 à 90%UR</li>
+      <li>Não Homogeneidade Máxima de Temperatura: ±0,5°C @ 25°C</li>
+      <li>Instabilidade Máxima de Temperatura: ±0,25°C @ 25°C</li>
+      <li>Instabilidade Máxima de Umidade: ±0,8%UR @ 50%UR</li>
+      <li>Alimentação: 220 V/ 60Hz</li>
+      <li>Potência: 800W</li>
+      <li>Medidas Internas Úteis (L x F x A): 250 x 300 x 350 mm</li>
+      <li>Peso Bruto Aproximado: 30 kg </li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+  <div class="card" style="width: 18rem;" id="card">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" id="imagemProduto">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://http2.mlstatic.com/minicmara-climatica-para-calibraco-de-termohigrometros-D_NQ_NP_992678-MLB41466265435_042020-F.webp"
+            class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img id="img2"
+            src="https://http2.mlstatic.com/minicmara-climatica-para-calibraco-de-termohigrometros-D_NQ_NP_890963-MLB41466285047_042020-F.webp"
+            class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <div class="card-body" id="cardTec">
+        <h5 class="card-title">MINICÂMARA CLIMÁTICA LABORCALL®</h5>
+        <p class="card-text">PARA CALIBRAÇÃO 26 LITROS<br>
+          FAIXA DE UTILIZAÇÃO 10 À 60°C / 20 À 90%UR </p>
+        <a href="#" class="btn btn-primary">Ficha Técnica</a>
+      </div>
+    </div>
+
+    
+
+
+</body>
+
+</html>
