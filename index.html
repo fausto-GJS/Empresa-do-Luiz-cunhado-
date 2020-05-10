@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Fausto Garcia Jacinto">
+  <meta name="DC.subject" content="metrologia, laborcall, LMI26, FLB500, laboratório, CNPJ 28.038.798/0001-80, vendas@laborcall.com.br, 99384-0927, 98188-4784, instrumentação, controle, instrumentação e controle,laboratórios de metrologia, tecnologias,fabricação de máquinas,sustentável,know how,2017,produto,nacional,produtos nacionais,equipamento científico,equipamento,científico">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -46,7 +47,7 @@
       }
 
       to {
-        filter: drop-shadow(0 0 15px #ffbe0b);
+        filter: drop-shadow(0 0 18px #ffbe0b);
       }
     }
 
@@ -123,8 +124,8 @@
     }
 
     #space {
-      width: 40%;
-      background: white; 
+      width: 25%;
+      background: white;
     }
   </style>
   <title>LABORCALL</title>
@@ -163,10 +164,10 @@
           <div class="modal-body">
             <p>
               <strong>
-                Celular:<br> +55 (11) 99384-0927<em> - Luiz</em><br><hr>
-                Celular: <br>+55 (19) 98188-4784<em> - Felipe</em><br><hr>
+                Celular:<br>(11) 99384-0927<em> - Luiz</em><br><hr>
+                Celular:<br>(19) 98188-4784<em> - Felipe</em><br><hr>
                 vendas@laborcall.com.br<br>
-                CNPJ 28.038.798/0001-8
+                CNPJ 28.038.798/0001-80
               </strong>
             </p>
           </div>
@@ -351,7 +352,7 @@
         <p class="card-text">MINICÂMARA CLIMÁTICA</p>
         <button id="btnFichaTecnica" type="button" class="btn btn-primary" data-toggle="modal"
           data-target="#exampleModalScrollableFichaTecnica1">
-          Ficha Tecnica
+          Ficha Técnica
         </button>
         <a href="https://produto.mercadolivre.com.br/MLB-1488703062-minicmara-climatica-para-calibraco-de-termohigrometros-_JM#position=1&type=item&tracking_id=d2fb33e7-3ea9-43fc-866f-14656fd8716a"
           class="btn btn-primary">Compre Já</a>
@@ -362,9 +363,9 @@
 
 
     <div id="space">
-       <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+       <div id="carouselExampleSlidesOnlySPACE" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active"><h2>LMI 26 LABORCALL®</h2>
             <h5><b> Versátil tanto para utilização em laboratórios de metrologia, quanto para transporte
               em casos de calibração nas instalações do cliente, podendo ser transportada em veículos
               de pequeno porte e alocada em espaços reduzidos.</b></h5>            
@@ -373,7 +374,7 @@
             
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
 
 
@@ -402,7 +403,7 @@
         <p class="card-text">FORNO DE BLOCO SECO</p>
         <button id="btnFichaTecnica" type="button" class="btn btn-primary" data-toggle="modal"
           data-target="#exampleModalScrollableFichaTecnica2">
-          Ficha Tecnica
+          Ficha Técnica
         </button>
         <a href="https://produto.mercadolivre.com.br/MLB-1488921273-forno-de-bloco-seco-para-calibraco-temperatura-de-50-500c-_JM#position=1&type=item&tracking_id=b0016332-686f-4b7d-a8d0-ee412f1a06f7"
           class="btn btn-primary">Compre Já</a>
@@ -415,21 +416,20 @@
   </div>
 </body>
 
-<script type="text/javascript">
 
-</script>
 
-<!-- 
+
 <script type="text/javascript">
-//pega a largura da resolução da tela
 var width = screen.width;
-//pega a altura da resolução da tela
-var height = screen.height;
-//verifica se a resolução dará uma boa visão do site
-if (width <= 800 || height <= 600)
-alert("A resolução da tela do seu monitor é " + width + "x" + height + ". Para visualizar o site é recomendado uma resolução de no mínimo 1024x768.");
-else
-alert("A resolução da tela do seu monitor é " + width + "x" + height + ".");
-</script> -->
+$('#carouselExampleSlidesOnlySPACE').carousel({
+  interval: 15000,
+  pause: false
+})
+$('#carouselExampleSlidesOnly').carousel({
+  interval: 5000,
+  pause: false
+})
+  if (width < 576){document.getElementById('space').style.display="none"};
+</script>
 
 </html>
